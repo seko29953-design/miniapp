@@ -41,13 +41,13 @@ const foods = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 flex justify-center">
-      <div className="w-full max-w-md">
+    <main className="min-h-screen bg-gray-100 flex justify-center pt-3">
+      <div className="flex flex-col h-52">
         <div className="grid grid-cols-3 gap-4">
           {foods.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col items-center text-center"
+              className="flex flex-col h-52"
             >
               <Image
                 src={food.image}
