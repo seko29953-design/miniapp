@@ -5,37 +5,37 @@ const foods = [
     id: 1,
     name: "Burger",
     price: 4.99,
-    image: "/foods/burger.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/burger.png",
   },
   {
     id: 2,
     name: "Fries",
     price: 1.49,
-    image: "/foods/fries.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/fries.png",
   },
   {
     id: 3,
     name: "Hotdog",
     price: 3.49,
-    image: "/foods/hotdog.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/hotdog.png",
   },
   {
     id: 4,
     name: "Taco",
     price: 3.99,
-    image: "/foods/taco.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/taco.png",
   },
   {
     id: 5,
     name: "Pizza",
     price: 7.99,
-    image: "/foods/pizza.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/pizza.png",
   },
   {
     id: 6,
     name: "Donut",
     price: 1.49,
-    image: "/foods/donut.png",
+    image: "https://seko29953-design.github.io/miniapp/foods/donut.png",
   },
 ];
 
