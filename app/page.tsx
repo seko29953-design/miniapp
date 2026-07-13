@@ -41,8 +41,8 @@ const foods = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 flex justify-center p-6">
-      <div className="bg-white rounded-xl shadow-md p-4 w-full max-w-md">
+    <main className="min-h-screen bg-gray-100 flex justify-center">
+      <div className="w-full max-w-md">
         <div className="grid grid-cols-3 gap-4">
           {foods.map((food) => (
             <div
