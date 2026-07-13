@@ -61,7 +61,7 @@ export default function Home() {
               </div>
 
               {/* Fixed Name Area */}
-              <h3 className="h-6 flex items-center justify-center text-sm font-medium text-center">
+              <h3 className="h-6 flex items-center justify-center text-sm font-medium text-center text-gray-500">
                 {food.name}
               </h3>
 
