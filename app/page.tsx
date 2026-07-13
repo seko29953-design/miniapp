@@ -41,29 +41,37 @@ const foods = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 flex justify-center pt-3">
-      <div className="flex flex-col h-52">
+    <main className="min-h-screen bg-gray-100 flex justify-center pt-4">
+      <div className="w-full max-w-md px-3">
         <div className="grid grid-cols-3 gap-4">
           {foods.map((food) => (
             <div
               key={food.id}
-              className="flex flex-col h-52"
+              className="flex flex-col items-center h-44"
             >
-              <Image
-                src={food.image}
-                alt={food.name}
-                width={70}
-                height={70}
-                className="object-contain"
-              />
+              {/* Fixed Image Area */}
+              <div className="w-20 h-20 flex items-center justify-center">
+                <Image
+                  src={food.image}
+                  alt={food.name}
+                  width={70}
+                  height={70}
+                  className="w-16 h-16 object-contain"
+                />
+              </div>
 
-              <h3 className="text-sm font-medium mt-2">{food.name}</h3>
+              {/* Fixed Name Area */}
+              <h3 className="h-6 flex items-center justify-center text-sm font-medium text-center">
+                {food.name}
+              </h3>
 
-              <p className="text-gray-600 text-xs mb-2">
+              {/* Fixed Price Area */}
+              <p className="h-5 text-sm text-gray-700">
                 ${food.price.toFixed(2)}
               </p>
 
-              <button className="bg-amber-400 hover:bg-amber-500 text-white font-bold text-xs px-5 py-1.5 rounded-md shadow transition">
+              {/* Button Always at Bottom */}
+              <button className="mt-auto w-18 bg-amber-400 hover:bg-amber-500 text-white font-bold text-xs py-2 rounded-lg shadow">
                 ADD
               </button>
             </div>
